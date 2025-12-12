@@ -5,23 +5,23 @@ __Focus areas:__ Blockchain foundations, cryptography, Python scripting, RPC, So
 
 ## WEEK 1 — Blockchain Foundations + Environment Setup
 __MON__
-- Set up GitHub Codespace\
-▸ GitHub Codespaces Guide:\
-https://docs.github.com/en/codespaces
+- Set up GitHub Codespace \
+<a href="https://docs.github.com/en/codespaces" target="_blank">Github Codespace Guide</a>
 - Create a "protocol-learning" repo
-- Start: Blockchain basics →\
-https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway
+- Start: Blockchain basics \
+  <a href="https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway" target="_blank">How Does Ethereum Work Anyway</a>
 
 __TUE__
-- Read: What is a blockchain?\
-https://www.ibm.com/topics/blockchain
-- Read: Blocks, Merkle trees, hashes\
-https://www.geeksforgeeks.org/merkle-tree-cryptography/
+
+- Read: What is a blockchain? \
+<a href="https://www.ibm.com/topics/blockchain" target="_blank">IBM Blockchain</a>
+- Read: Blocks, Merkle trees, hashes \
+<a href="https://www.geeksforgeeks.org/merkle-tree-cryptography/" target="blank">Merkle Tree Cyroptography</a>
 
 __WED__
 
 - Read: How Ethereum works\
-https://ethereum.org/en/developers/docs/
+<a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Docs</a>
 - In Codespace: create a folder /notes-week1/
 
 __THU__
