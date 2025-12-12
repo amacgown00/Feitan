@@ -1,85 +1,73 @@
-#__1.5-Month Accelerated Calendar (6 Weeks)__  
-__Protocol / Core Engineering Technical Writer Track__ \
+# __1.5-Month Accelerated Calendar (6 Weeks)__  
+__Protocol / Core Engineering Technical Writer Track__
 
 __Focus areas:__ Blockchain foundations, cryptography, Python scripting, RPC, Solidity, Rust, Go, reading specs.
-\
-##WEEK 1 — Blockchain Foundations + Environment Setup
-MON
 
-Set up GitHub Codespace
-▸ GitHub Codespaces Guide:
+## WEEK 1 — Blockchain Foundations + Environment Setup
+__MON__
+- Set up GitHub Codespace\
+▸ GitHub Codespaces Guide:\
 https://docs.github.com/en/codespaces
-
-Create a "protocol-learning" repo
-
-Start: Blockchain basics →
+- Create a "protocol-learning" repo
+- Start: Blockchain basics →\
 https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway
 
-TUE
-
-Read: What is a blockchain?
+__TUE__
+- Read: What is a blockchain?\
 https://www.ibm.com/topics/blockchain
-
-Read: Blocks, Merkle trees, hashes
+- Read: Blocks, Merkle trees, hashes\
 https://www.geeksforgeeks.org/merkle-tree-cryptography/
 
-WED
+__WED__
 
-Read: How Ethereum works
+- Read: How Ethereum works\
 https://ethereum.org/en/developers/docs/
+- In Codespace: create a folder /notes-week1/
 
-In Codespace: create a folder /notes-week1/
+__THU__
 
-THU
-
-Learn: Transactions + gas
+- Learn: Transactions + gas\
 https://ethereum.org/en/developers/docs/gas/
+- Start writing your own explanation of "How a blockchain works"
 
-Start writing your own explanation of "How a blockchain works"
+__FRI__
 
-FRI
-
-Learn: Private keys & wallets
+- Learn: Private keys & wallets\
 https://andersbrownworth.com/blockchain/public-private-keys/
+- Codespace task: Implement SHA-256 hash in Python (hashlib)
 
-Codespace task: Implement SHA-256 hash in Python (hashlib)
+__SAT__
 
-SAT
-
-Watch crashes-course overview
+- Watch crashes-course overview\
 https://www.youtube.com/watch?v=bBC-nXj3Ng4
+- Summarize Bitcoin vs Ethereum
 
-Summarize Bitcoin vs Ethereum
-
-SUN
+__SUN__
 
 REST or review day
 
-📅 WEEK 2 — Cryptography + Python Transaction Signing
-MON
+## WEEK 2 — Cryptography + Python Transaction Signing
+__MON__
 
-Learn Elliptic Curve Cryptography basics
+- Learn Elliptic Curve Cryptography basics\
 https://cryptobook.nakov.com/elliptic-curve-cryptography/ecc-introduction
 
-Codespace: pip install ecdsa
+- Codespace: pip install ecdsa
 
-TUE
+__TUE__
 
-Learn how digital signatures work
+- Learn how digital signatures work\
 https://www.section.io/engineering-education/elliptic-curve-cryptography/
 
-WED
+__WED__
 
-Codespace Python task:
+- Codespace Python task:
+  - generate keypair
+  - sign message
+  - verify signature\
+(Use <mark>ecdsa</mark> library)
 
-generate keypair
-
-sign message
-
-verify signature
-(Use ecdsa library)
-
-THU
+__THU__
 
 Read: Ethereum accounts & signing
 https://ethereum.org/en/developers/docs/accounts/
