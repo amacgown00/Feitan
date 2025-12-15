@@ -16,7 +16,7 @@ __TUE__
 - Read: What is a blockchain? \
 <a href="https://www.ibm.com/topics/blockchain" target="_blank">IBM Blockchain</a>
 - Read: Blocks, Merkle trees, hashes \
-<a href="https://www.geeksforgeeks.org/dsa/introduction-to-merkle-tree/" target="blank">Merkle Tree Cyroptography</a>
+<a href="https://www.geeksforgeeks.org/dsa/introduction-to-merkle-tree/" target="blank">Merkle Tree Cryptography</a>
 
 __WED__
 
