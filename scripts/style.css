@@ -1,8 +1,14 @@
 body {
 	color: #000;
 	font-family: sans-serif;
+	text-align: center;
 	}
 	
+	p.equation {
+		display: inline-block;
+		text-align: center;
+		}
+		
 .hover {
 	position: relative;
 	cursor: pointer;
@@ -20,11 +26,31 @@ body {
 	background: #fff;
 	color: #222;
 	padding: 6px 8px;
+	border: 1px solid #000;
 	border-radius: 0;
 	width: 220px;
 	font-size: 1em;
 	z-index: 100;
-	top: -10px;
+	top: -40px;
 	left: 50%;
 	transform: translate(-50%, -100%);
 }
+
+.display-bubble:after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 10px;
+	background: #000;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(50%);
+	}
+
+
+
+
+
+
+
+
