@@ -12,6 +12,7 @@ body {
 	p.equation {
 		display: inline-block;
 		text-align: center;
+		font-family: 'Fira Mono', monospace;
 		}
 		
 .hover {
