@@ -1,4 +1,4 @@
-<link rel=stylesheet" href="scripts/style.css">
+<link rel="stylesheet" href="scripts/style.css">
 <script src="scripts/hover.js" defer></script>
 
 # __Blockchain Basics__
