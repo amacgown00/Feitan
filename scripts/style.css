@@ -1,12 +1,12 @@
 body {
 	color: #000;
-	font-family: 'Noto Sans';
+	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
 	}
 	
 	h1, h2 {
 		text-align: left
-		font-family: 'Noto Sans';
+		font-family: 'Noto Sans' sans-serif;
 		}
 		
 	p.equation {
