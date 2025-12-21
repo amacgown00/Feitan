@@ -1,5 +1,5 @@
-#__Blockchain Basics__
+# __Blockchain Basics__
 
-##Ethereum
+## Ethereum
 
 maxFeePerGas = baseFeePerGas + maxPriorityFeePerGas
