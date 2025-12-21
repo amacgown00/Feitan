@@ -14,7 +14,10 @@ body {
 		text-align: center;
 		font-family: 'Fira Mono', monospace;
 		}
-		
+	p.equation .hover:first-of-type .display-bubble {
+		transform: translate(-40%, -100%);
+	}
+
 .hover {
 	position: relative;
 	cursor: pointer;
@@ -34,10 +37,10 @@ body {
 	padding: 6px 8px;
 	border: 1px solid #000;
 	border-radius: 0;
-	width: 220px;
-	font-size: 1em;
+	width: 200px;
+	font-size: 0.85em;
 	z-index: 100;
-	top: -40px;
+	top: -20px;
 	left: 50%;
 	transform: translate(-50%, -100%);
 }
@@ -45,12 +48,12 @@ body {
 .display-bubble::after {
 	content: '';
 	position: absolute;
-	width: 2px;
-	height: 10px;
+	width: 1px;
+	height: 16px;
 	background: #000;
-	bottom: -10px;
+	bottom: -16px;
 	left: 50%;
-	transform: translateX(50%);
+	transform: translateX(-50%);
 	}
 
 
