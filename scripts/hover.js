@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const hovers = document.querySelectorAll("hover");
+	const hovers = document.querySelectorAll(".hover");
 	hovers.forEach(el => {
 		let bubble;
 		const showDisplay = () => {
@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 				bubble.remove();
 				bubble = null;
 				}
-		e.addEventListener(mouseenter", showDisplay;
+		};
+		el.addEventListener("mouseenter", showDisplay);
 		el.addEventListener("mouseleave", hideDisplay);
 		el.addEventListener("click", (e) => {
 			e.stopPropagation();
