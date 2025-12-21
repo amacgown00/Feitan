@@ -19,3 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			e.stopPropagation();
 			bubble ? hideDisplay() : showDisplay();
 			});
+			document.addEventListener("click", hideDisplay);
+			});
+	});
