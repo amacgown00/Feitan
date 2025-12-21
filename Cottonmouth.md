@@ -1,1 +1,2 @@
-Python notes 
+# __Python__
+Instead of taking notes by hand.   
