@@ -3,7 +3,7 @@
 	cursor: pointer;
 	color: #29b4c6;
 	font-weight: bold;
-	text-shadow: 0 0 2px rgba(0,0,0,0,2);
+	text-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 	
 .display-bubble {
