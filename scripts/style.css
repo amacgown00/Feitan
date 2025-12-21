@@ -1,2 +1,21 @@
 .hover {
 	position: relative;
+	cursor: pointer;
+	color: #29b4c6;
+	font-weight: bold;
+	text-shadow: 0 0 2px rgba(0,0,0,0,2);
+}
+	
+.display-bubble {
+	position: absolute;
+	background: #fff;
+	color: #222;
+	padding: 6px 8px;
+	border-radius: 4px;
+	width: 220px;
+	font-size: 1em;
+	z-index: 100;
+	top: -10px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
