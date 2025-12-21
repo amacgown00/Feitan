@@ -7,3 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			bubble.className = "display-bubble";
 			bubble.textContent = el.dataset.display;
 			el.appendChild(bubble);
+		};
+		const hideDisplay = () => {
+			if (bubble) {
+				bubble.remove();
+				bubble = null;
+				}
+		e.addEventListener(mouseenter", showDisplay;
+		el.addEventListener("mouseleave", hideDisplay);
+		el.addEventListener("click", (e) => {
+			e.stopPropagation();
+			bubble ? hideDisplay() : showDisplay();
+			});
