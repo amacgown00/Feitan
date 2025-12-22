@@ -2,21 +2,22 @@ body {
 	color: #000;
 	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
-	}
+			}
 	
-	h1, h2 {
-		text-align: left;
-		font-family: 'Noto Sans' sans-serif;
-		}
+h1, h2 {
+	text-align: left;
+	font-family: 'Noto Sans' sans-serif;
+			}
 		
-	p.equation {
-		display: inline-block;
-		text-align: center;
-		font-family: 'Fira Mono', monospace;
-		}
-	p.equation .hover:first-of-type .display-bubble {
-		transform: translate(-40%, -100%);
-	}
+p.equation {
+	display: inline-block;
+	text-align: center;
+	font-family: 'Fira Mono', monospace;
+			}
+
+p.equation .hover:shift-right .display-bubble {
+	transform: translate(-40%, -100%);
+			}
 
 .hover {
 	position: relative;
@@ -24,11 +25,11 @@ body {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
-}
+		}
 
 .hover:hover {
 	color: #9CAF88;
-	}
+		}
 	
 .display-bubble {
 	position: absolute;
@@ -43,7 +44,7 @@ body {
 	top: -20px;
 	left: 50%;
 	transform: translate(-50%, -100%);
-}
+		}
 
 .display-bubble::after {
 	content: '';
@@ -54,7 +55,7 @@ body {
 	bottom: -16px;
 	left: 50%;
 	transform: translateX(-50%);
-	}
+		}
 
 
 
