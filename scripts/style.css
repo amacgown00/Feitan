@@ -33,12 +33,13 @@ p.equation {
 	position: relative;
 	cursor: pointer;
 	color: #000;
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration: none;
 		}
 
 .hover:hover {
 	color: #9CAF88;
+	font-weight: bold;
 		}
 	
 .display-bubble {
