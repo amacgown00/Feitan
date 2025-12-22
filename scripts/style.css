@@ -10,9 +10,10 @@ h1, h2, h3 {
 			}
 		
 p.equation {
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-family: 'Fira Mono', monospace;
+	margin-bottom: 1em;
 			}
 
 .hover.shift-right .display-bubble {
