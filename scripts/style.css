@@ -15,7 +15,7 @@ p.equation {
 	font-family: 'Fira Mono', monospace;
 			}
 
-p.equation .hover:shift-right .display-bubble {
+.hover:shift-right .display-bubble {
 	transform: translate(-40%, -100%);
 			}
 
