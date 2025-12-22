@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			bubble = document.createElement("div");
 			bubble.className = "display-bubble";
 			bubble.textContent = el.dataset.display;
+
+			if (el.classList.contains("shift-right")) {
+				bubble.style.transform = "translate(-40%, -100%)";
+			}
 			el.appendChild(bubble);
 		};
 		
