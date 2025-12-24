@@ -1,7 +1,7 @@
 body {
 	color: #000;
 	font-family: 'Noto Sans', sans-serif;
-	text-align: center;
+	text-align: left;
 			}
 	
 h1, h2 {
@@ -27,6 +27,7 @@ p.equation {
 	text-align: center;
 	font-family: 'Noto Sans', sans-serif;
 	margin-bottom: 1em;
+	text-align: center;
 			}
 
 .hover.shift-right .display-bubble {
