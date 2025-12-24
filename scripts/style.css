@@ -2,12 +2,12 @@ body {
 	color: #000;
 	font-family: 'Noto Sans', sans-serif;
 	text-align: left;
-			}
+}
 	
 h1, h2 {
 	text-align: left;
 	font-family: 'Noto Sans' sans-serif;
-			}
+}
 
 h3 {
 	display: block;
@@ -16,21 +16,21 @@ h3 {
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
 	z-index: 1;
-			}
+}
 
 .list {
   list-style: none;
   padding-left: 0;
-			}
+}
 
 .list li {
 	padding-left: 1.2em;
 	text-indent: -1.2em;
-			}
+}
 
 .list li::before {
   content: "— ";
-			}
+}
 	
 p.equation {
 	display: block;
@@ -38,11 +38,11 @@ p.equation {
 	font-family: 'Noto Sans', sans-serif;
 	margin-bottom: 1em;
 	text-align: center;
-			}
+}
 
 .hover.shift-right .display-bubble {
 	transform: translate(-40%, -100%);
-			}
+}
 
 .hover {
 	position: relative;
@@ -50,12 +50,12 @@ p.equation {
 	color: #000;
 	font-weight: normal;
 	text-decoration: none;
-		}
+}
 
 .hover:hover {
 	color: #9CAF88;
 	font-weight: bold;
-		}
+}
 	
 .display-bubble {
 	position: absolute;
@@ -70,7 +70,12 @@ p.equation {
 	top: -20px;
 	left: 50%;
 	transform: translate(-50%, -100%);
-		}
+}
+
+.display-bubble ul {
+	margin: 0;
+	padding-left: 16px;
+}
 
 .display-bubble::after {
 	content: '';
@@ -81,4 +86,4 @@ p.equation {
 	bottom: -16px;
 	left: 50%;
 	transform: translateX(-50%);
-		}
+}
