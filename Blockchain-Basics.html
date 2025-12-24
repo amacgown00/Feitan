@@ -19,7 +19,6 @@
 </p>
 <h3>Fee to Execute a Transaction</h3>
   <p class="equation">
-  (
     <span class="hover" data-display="baseFeePerGas">190</span> + 
     <span class="hover" data-display="maxPriorityFeePerGas – max gas tip for validator">10</span> ) x 
     <span class="hover" data-display="Simple transfer transaction gas fee">21,000</span> = 4,200,000 gwei
@@ -32,7 +31,16 @@
     <li>Generating these is where the cryptography comes in.</li>
     <li> There are many layered steps to ensure that security and that the transaction was made by the right sender.</li>
   </ul>
-  <h3>r</h3>
+  <h3>r - an x-coordinate</h3>
+  Here are the steps involved to calculate r
+
+  1. Generate the transaction hash, z.
+  <p class="equation">
+    <span class="hover" data-display="Transaction hash">z</span> = 
+    <span class="hover" data-display="Convert to integer">int</span> ( 
+    <span class="hover" data-display="Hash function">Keccak—256</span> (
+    <span class="hover" data-display="nonce, to, value, gasLimit, gasPrice, data, chainId">transaction data</span> )
+  </p>
 </body>
 </html>
 
