@@ -9,6 +9,68 @@
         <link rel="stylesheet" href="scripts/style.css">
     </head>
     <body>
-        <h1>Git</h1>
+    <h1>Git</h1>
+        <h2>1. Check current status</h2>
+            <pre><code>
+                git status
+            </code></pre>
+            <ul>
+                <li>Shows new, modified, and deleted files.</li>
+                <li>Tells you if the working tree is clean.</li>
+            </ul>
+        
+        <h2>2. Create folders</h2>
+        <pre><code>
+            mkdir -p 01-folder
+        </code></pre>
+            <ul>
+                <li>-p makes parent folders if missing.</li>
+            </ul>
+        
+        <h2>3. Create or overwrite a file</h2>
+        <pre><code>touch 01-folder/doc.md</code></pre>
+        <p>Or write content directly from the terminal:</p>
+        <pre><code>echo 'Same as it ever was' > 01-folder/doc.md</code></pre>
+        
+        <h2>4. Delete files</h2>
+        <pre><code>rm 01-folder/doc.md</code></pre>
+        <p>Or delete multiple files at once:</p>
+        <pre><code>rm 01-folder/*.tmp</code></pre>
+        
+        <h2>5. Stage changes (including deletes)</h2>
+        <pre><code>git add . </code></pre>
+        <p>Stages all new, modified, or deleted files.<br>
+        Optional: stage only tracked changes and deletions:</p>
+        <pre><code>git add -u</code></pre>
+
+        <h2>6. Commit</h2>
+        <pre><code>git commit -m "Notes you can write about the change"</code></pre>
+
+        <h2>7. Pull remote changes</h2>
+        <pre><code>git pull --no--rebase</code></pre>
+        <p>Merges remote changes into your local branch.<br>
+        Finalize merge:</p>
+        <pre><code>git commit</code></pre>
+        
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
