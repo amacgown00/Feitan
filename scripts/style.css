@@ -1,0 +1,89 @@
+body {
+	color: #000;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: left;
+}
+	
+h1, h2 {
+	text-align: left;
+	font-family: 'Noto Sans' sans-serif;
+}
+
+h3 {
+	display: block;
+	text-align: left;
+	font-family: 'Noto Sans', sans-serif;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	z-index: 1;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+	padding-left: 1.2em;
+	text-indent: -1.2em;
+}
+
+.list li::before {
+  content: "– ";
+}
+	
+p.equation {
+	display: block;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.hover.shift-right .display-bubble {
+	transform: translate(-40%, -100%);
+}
+
+.hover {
+	position: relative;
+	cursor: pointer;
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.hover:hover {
+	color: #9CAF88;
+	font-weight: bold;
+}
+	
+.display-bubble {
+	position: absolute;
+	background: #fff;
+	color: #222;
+	padding: 6px 8px;
+	border: 1px solid #000;
+	border-radius: 0;
+	width: 200px;
+	font-size: 0.85em;
+	z-index: 100;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.display-bubble ul {
+	margin: 0;
+	padding-left: 16px;
+}
+
+.display-bubble::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	background: #000;
+	bottom: -16px;
+	left: 50%;
+	transform: translateX(-50%);
+}

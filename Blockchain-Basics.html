@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Basics</title>
+  <link rel="stylesheet" href="scripts/style.css">
+  <script src="scripts/hover.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+<h1>Ethereum</h1>
+
+
+<p class="equation">
+  <span class="hover shift-right" data-display="Max fee the sender is willing to pay for the transaction">maxFeePerGas</span> = 
+  <span class="hover" data-display="Current base fee per gas on the network">baseFeePerGas</span> +
+  <span class="hover" data-display="Tip for the validator">maxPriorityFeePerGas</span>
+</p>
+<h3>Fee to Execute a Transaction</h3>
+  <p class="equation">( 
+    <span class="hover" data-display="baseFeePerGas">190</span> + 
+    <span class="hover" data-display="maxPriorityFeePerGas – max gas tip for validator">10</span> ) x 
+    <span class="hover" data-display="Simple transfer transaction gas fee">21,000</span> = 4,200,000 gwei
+  </p>
+<h2> r, s, v</h2>
+  <ul class="list">
+    <li>These represent different components of the signature.</li>
+    <li>These are proof that the transaction was authorized by a specific private key, and they are generated before the transaction occurs.</li>
+    <li>They are core transaction fields publicly visible after a transaction has been added to the block.</li>
+    <li>Generating these is where the cryptography comes in.</li>
+    <li> There are many layered steps to ensure that security and that the transaction was made by the right sender.</li>
+  </ul>
+  <h3>r - an x-coordinate</h3>
+  Here are the steps involved to calculate r<br>
+
+  1. Generate the transaction hash, z.
+  <p class="equation">
+    <span class="hover" data-display="Transaction hash">z</span> = 
+    <span class="hover" data-display="Convert to integer">int</span> ( 
+    <span class="hover" data-display="Hash function">Keccak–256</span> (
+    <span class="hover" data-display=
+      '<ul>
+        <li>nonce</li>
+        <li>to</li>
+        <li>value</li>
+        <li>gasLimit</li>
+        <li>gasPrice</li>
+        <li>data</li>
+        <li>chainID</li>
+      </ul>'>transaction data</span> )    
+  </p><br>
+    2. Generate k — the ephemeral key, or a unique key that is generated for each transaction that is new each time.
+  <p class=“equation”>
+    <span class="hover" data-display="Ephemeral key">k</span> = 
+    <span class="hover" data-display='The function that combines a secret key +  message + hash function (SHA-256)'>HMAC–256</span> ( 
+    <span class="hover" data-display="Hash">z</span>, 
+    <span class="hover" data-display="A unique ID that all externally-owned accounts have (users)">private key</span> )
+  </p><br>
+    
+    3. Generate R<br>
+      R = k ⋅ G | using elliptic curve scalar multiplication<br>
+        R is a point on the curve that has x and y coordinates (x_R, y_R)<br>
+      <i>r</i> = x_R mod n <br><ul>
+      <li><i>r</i> = (the x-coordinate of R) reducing it module n</li>
+      <li>Scalar reduction to fit it into the range</li>
+      </ul>
+    
+    4. S – signature<br>
+      - S = k-¹ * (z + r * d) mod n
+    - Signature = k^ ¹ * ( hash + x-coordinate * private key ) MOD curve order 
+  <br>
+  <h1>How a Blockchain Works</h1>
+  <p>
+    <ol>
+      <li>A set of transactions occur during a certain time interval.</li>
+      <li>A random validator node verifies the transactions.</li>
+      <li>Valid transactions are recorded into a block.</li>
+      <li>The next block is connected to the one preceding it, creating a chain.</li>
+    </ol>
+  </p>
+  <h1>Public and Private Keys</h1>
+   
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
