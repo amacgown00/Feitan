@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Git</title>
+        <link rel="stylesheet" href="scripts/style.css">
+        <script src="scripts/hover.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scripts/style.css">
+    </head>
+    <body>
+    <h1>Git</h1>
+        <h2>1. Check current status</h2>
+            <pre><code>
+                git status
+            </code></pre>
+            <ul>
+                <li>Shows new, modified, and deleted files.</li>
+                <li>Tells you if the working tree is clean.</li>
+            </ul>
+        
+        <h2>2. Create folders</h2>
+        <pre><code>
+            mkdir -p 01-folder
+        </code></pre>
+            <ul>
+                <li>-p makes parent folders if missing.</li>
+            </ul>
+        
+        <h2>3. Create / overwrite a file</h2>
+        <pre><code>touch 01-folder/doc.md</code></pre>
+        <p>Or write content directly from the terminal:</p>
+        <pre><code>echo 'Same as it ever was' > 01-folder/doc.md</code></pre>
+        
+        <h2>4. Delete files</h2>
+        <pre><code>rm 01-folder/doc.md</code></pre>
+        <p>Or delete multiple files at once:</p>
+        <pre><code>rm 01-folder/*.tmp</code></pre>
+        
+        <h2>5. Stage changes (including deletes)</h2>
+        <pre><code>git add . </code></pre>
+        <p>Stages all new, modified, or deleted files.<br>
+        Optional: stage only tracked changes and deletions:</p>
+        <pre><code>git add -u</code></pre>
+
+        <h2>6. Commit</h2>
+        <pre><code>git commit -m "Notes you can write about the change"</code></pre>
+
+        <h2>7. Pull remote changes</h2>
+        <pre><code>git pull --no--rebase</code></pre>
+        <p>Merges remote changes into your local branch.<br>
+        Finalize merge:</p>
+        <pre><code>git commit</code></pre>
+
+        <h2>8. Push changes to GitHub</h2>
+        <pre><code>git push</code></pre>
+        <P>Updates the remote repo to match your local<br>
+        Deletes removed files on GitHub.</P>
+
+        <h2>9. Quick Verify</h2>
+        <pre><code>git status
+        git log --oneline -5</code></pre>
+        <p>- git status – should say <b>working tree clean.</b><br>
+        git log --oneline — shows last 5 commits.</p>
+
+        <h2>10. Undo mistakes safely</h2>
+        <p>Undo <b>unstaged</b> changes</p>
+        <pre><code>git restore FILE</code></pre>
+        <p>Undo staged changes</p>
+        <pre><code>git restore --staged FILE</code></pre><br>
+        Revert last commit (keep changes in files)
+        <pre><code>git reset --soft HEAD-1</code></pre>
+
+        <h2>In summary</h2>
+        <ol>
+            <li>git status — check first</li>
+            <li>Edit / create/ delete files — terminal or explorer</li>
+            <li>git add . — stage all changes</li>
+            <li>git commit -m "message" — save snapshot</li>
+            <li>git pull --no-rebase </li>
+        </ol>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
