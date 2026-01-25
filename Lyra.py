@@ -17,3 +17,11 @@ if (target_date.month, target_date.day) < (birthday.month, birthday.day):
 print(f"Birthday: {birthday}")
 print(f"Target date: {target_date}")
 print(f"I was {age} years old on {target_date}")
+
+#original
+newpy() {
+    if [ -z "$1" ]; then
+        cd /Users/amacgown/Desktop/feitan
+    fi
+    code -r "src/$1"
+}
