@@ -54,10 +54,22 @@ print(meadow)</code></pre>
 <h2>Lists - set of items in a particular order</h2>
 <p>In square brackets with elements separated by commas.
     <pre><code>Ages = [3, 15, 20]<br>
-        orchid_genera = ["phragmipedium", "phalaenopsis", "cattleya"]</code></pre><br>
+    orchid_genera = ["phragmipedium", "phalaenopsis", "cattleya"]</code></pre><br>
     Elements can be called by index.<br>
-    <pre><code>print(orchid_genera[2].title())</code></pre><br>
-    Cattleya
+    <pre><code>print(orchid_genera[2].title())</code></pre><br> Cattleya
+    -1 = last item in the list.
+
+    Append, a method that adds an element to the end of the list
+    <pre><code>orchid_genera.append("dendrobium")</code></pre>
+
+    Insert - method to add an element at a certain position
+    <pre><code>orchid_genera.insert(1, "catasetum")</code></pre>
+
+    Del - statement to remove an element at a certain position
+    <pre><code>del orchid_genera[0]</code></pre>
+
+    Remove - method to remove an element by value when you don't know its index.
+    <pre><code>orchid_genera.remove("phalaenopsis")</code></pre>
 </p>
 </body>
 </html>
