@@ -33,44 +33,19 @@ print(warlords_7)
 warlords_7.append('Marshall D. Teach')
 print(warlords_7)
 
-#Creating a list of the emperors starting with an empty list
 emperors4 = []
 emperors4.append('Whitebeard')
 emperors4.append('Red-Haired Shanks')
+
 print(emperors4)
 
-emp1 = 'Whitebeard'
-emp2 = 'Kaido'
-emp3 = 'Big Mom'
-emp4 = 'Red-Haired Shanks'
 
-emperors4.insert(3, emp3)
-emperors4.insert(2, emp2)
-print(emperors4)
 
-#Marineford
-del emperors4[0]
-print(emperors4)
 
-sea = warlords_7.pop(4)
-zombie = warlords_7.pop(5)
-pink = warlords_7.pop(2)
 
-print(warlords_7)
-print(sea + ', ' + zombie + ", and " + pink + " were removed.")
 
-#Removing Traffy by his name since I don't know his position
-warlords_7.remove('Trafalger D. Water Law')
-print(warlords_7)
 
-#The enumerate() function returns both the index and the value of each item in a list
-for index, new_warlords in enumerate(warlords_7):
-    print(index, new_warlords)
-    
-guest_list = ['Future Husband', 'Zohran Mamdani', 'Anderson Cooper']
-     
+
+
+
 #
-     
-     
-     
-    

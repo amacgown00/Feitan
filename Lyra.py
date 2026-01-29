@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
 from datetime import datetime
 now = datetime.now()
 
 formatted = now.strftime("%b %d, %Y")
 print(formatted)
+
 
 from datetime import date
 birthday = date(1996, 4, 18)
