@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Memory</title>
+  <link rel="stylesheet" href="scripts/style.css">
+  <script src="scripts/hover.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scripts/style.css">
+</head>
+<body>
+<h1>Python Memory</h1>
+
+<h2>Functions - word<b>()</b></h2>
+<p>
+    Represents data without changing it.
+    <pre><code>print()</code></pre>
+</p>
+
+<h2>Variables — label = value</h2>
+        <pre><code>bird = "albatross"<br>
+            print(bird)</code></pre>
+<p>
+    <ul>
+        <li>Letters, numbers, or underscores.</li>
+        <li>No spaces.</li>
+    </ul>
+</p>
+
+<h2>Methods — <b>.method()</b></h2>
+<p>An action that can be performed on a piece of data; modifying data.
+    <pre><code>variable.method()<br>
+    print(bird.title())</code></pre>
+</p>
+<h2>Strings - a series of characters inside quotes</h2>
+<p><i>f</i>"String {variable}" (Use curly brackets) Insert variable value into a string.</p>
+<pre><code>bird = "albatross"<br>
+Meadow = f"The {bird.title()} was considered the most legendary of all birds."<br>
+print(meadow)</code></pre>
+
+<h2>Numbers</h2>
+<p>
+    <ul>
+        <li>+ = addition</li>
+        <li>- = subtraction</li>
+        <li>/ = division</li>
+        <li>* = multiplication</li>
+        <li>** = exponent (2 ** 2) = 4</li>
+        <li>Float — a number with a decimal point (dividing any 2 numbers will produce a float).</li>
+        <li>CONSTANT = unchanging variable, must be in ALL CAPS.</li>
+    </ul>
+</p>
+
+<h2>Lists - set of items in a particular order</h2>
+<p>In square brackets with elements separated by commas.
+    <pre><code>Ages = [3, 15, 20]<br>
+    orchid_genera = ["phragmipedium", "phalaenopsis", "cattleya"]</code></pre><br>
+    Elements can be called by index.<br>
+    <pre><code>print(orchid_genera[2].title())</code></pre><br> Cattleya
+    -1 = last item in the list.
+
+    Append, a method that adds an element to the end of the list
+    <pre><code>orchid_genera.append("dendrobium")</code></pre>
+
+    Insert - method to add an element at a certain position
+    <pre><code>orchid_genera.insert(1, "catasetum")</code></pre>
+
+    Del - statement to remove an element at a certain position
+    <pre><code>del orchid_genera[0]</code></pre>
+
+    Remove - method to remove an element by value when you don't know its index.
+    <pre><code>orchid_genera.remove("phalaenopsis")</code></pre>
+</p>
+</body>
+</html>
