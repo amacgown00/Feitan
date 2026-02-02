@@ -1,51 +1,57 @@
-##!/usr/bin/env python3
-#lists
+#!/usr/bin/env python3
+#Chapter 3. Lists
+#Actually doing the homework for once 
 
-#standard list
-warlords_7 = ['Hawkeye Mihawk', 'Kuma', 'Doflamingo', 'Boa Hancock','Jinbe','Crocodile','Gecko Moria']
+print("3-4") 
+guest_list = ['Future Husband', 'Zohran Mamdani', 'Anderson Cooper', 'Zodiac Killer']
 
-#looping through a slice
-for warlord in warlords_7[0:3]:
-    print(warlord.lower())
+for guest in guest_list:
+    print("Dear "+guest+", please join me for dinner.\n")
 
-#returning the second to last in the list
-print(warlords_7[-2])
+print("\n\n3-5\n")
 
-#New way of inserting variables into a string (and adding an index)
-print("I don't consider " + warlords_7[5] + " and " + warlords_7[6] + " as warlords.")
+print("1\n")
+flake = guest_list.pop(-1)
+print("The "+flake.upper()+" said he's busy and can't make it to my dinner.\n")
 
-#Old way of inserting variables into a string (adding an index)   
-print(f"I don't consider {warlords_7[5]} and {warlords_7[6]} to be warlords anymore.")
-    #old way
+print('2\n')
+bff = 'Friedrich Nietzsche'
+guest_list.insert(2, bff)
+
+print("Dear " + guest_list[0]+", I cordially extend my invitation to join me for dinner at my place of residence.\n")
+
+#3
+print('3\n')
+for guest in guest_list:
+    print("Dear " + guest + ", I would like to cordially invite you to join me for dinner at my place of residence.\n")
+
+print("\n\n3-6 More Guests\n")
+print("Dear " + guest_list[0] + ", I have found a bigger dining table and will be inviting more guests.\n\n")
+
+for guest in guest_list:
+    print("Dear " + guest + ", I have found a different dining table that can accommodate more guests, and I will be inviting 3 more people.\n")
+
+new_x, new_y, new_z = "Frank Costanza", "Al Gore", "Warren Buffett"
+
+guest_list.insert(0, new_x)
+guest_list.insert(2, new_y)
+guest_list.append(new_z)
+
+line2 = '\n\n'
+line1 = '\n'
+#String interpolation operator ("%s") % (variable)
+for guest in guest_list:
+    print("Dear %s, I would like to cordially invite you to a dinner party I am hosting.%s" % (guest, line1))
     
-favorite1 = warlords_7[0].upper()
-favorite2 = warlords_7[3].upper()
-favorite3 = warlords_7[4].upper()
-
-#Inserting variables in uppercase the new way
-print(favorite1 + ", " + favorite2 + " , and " + favorite3 + " are my favorite warlords.")
-
-#Changing the list to replace Crocodile with Traffy 
-warlords_7[5] = "Trafalger D. Water Law"
-print(warlords_7)
-
-#Adding Teach to the end of the list
-warlords_7.append('Marshall D. Teach')
-print(warlords_7)
-
-emperors4 = []
-emperors4.append('Whitebeard')
-emperors4.append('Red-Haired Shanks')
-
-print(emperors4)
+print('%s3-7%s' % (line2, line1))
+print('I can only invite 2 people to dinner%s' % line1)
 
 
+new_index_list = list((range(len(guest_list))))
+print(new_index_list)
 
-
-
-
-
-
-
-
-#
+"""for final_guest in guest_list:
+    guest_list.pop()"""
+    
+#list.insert()
+"""to print the index. it needs to be (index, VARIABLE), then just print the index even if you don't use it
