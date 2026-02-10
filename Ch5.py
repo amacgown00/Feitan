@@ -155,6 +155,57 @@ fruit_3 = 'strawberries'
 if fruit_3 in favorite_fruits:
     print('Wow, you must really love ' + fruit_3)
 
+fruit_5 = 'blueberries'
+if fruit_5 in favorite_fruits:
+    print('Wow, you must really love ' + fruit_5)
+else:
+    print('I do not like ' + fruit_5 + ' as much as I like the other fruits\n\n')
+
+boba_toppings = ['aloe', 'yogurt pop', 'crystal', 'boba']
+boba_order = ['aloe', 'yogurt pop']
+
+for toppings in boba_order:
+    if toppings in boba_toppings:
+        print('Adding ' + toppings + ' to your drink.')
+    else:
+        print('Sorry, we are all out of ' + toppings)
+
+print('Number 85 is ready\n\n')
+
+#5-9
+
+usernames = []
+if usernames:
+    for user in usernames:
+        print('Hello ' + user)
+else:
+    print('We need to get some new users\n\n')
+
+
+#5-10
+current_users = ['janerubyjane', 'blonded', 'banksy', 'paloma_wool', 'outlier']
+new_users = ['kotn', 'jacquemus', 'glossier', 'hypebae', 'blonded', 'paloma_wool']
+
+for user in new_users:
+    if user in current_users:
+        print(user + ' has already been taken. Please enter a new username.')
+    else:
+        print(user + ' is available\n\n')
+    
+#5-11
+numbers = ['1','2','3','4','5','6','7','8','9']
+for number in numbers:
+    if number == '1':
+        print(number + "st")
+    elif number == '2':
+        print(number + 'nd')
+    elif number == '3':
+        print(number + 'rd')
+    else:
+        print(number + 'th')
+
+
+        
 
 
 
@@ -164,3 +215,8 @@ if fruit_3 in favorite_fruits:
 
 
 
+
+
+
+
+#
