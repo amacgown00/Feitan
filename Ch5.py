@@ -45,30 +45,119 @@ print('\n\n')
 
 #6 
 
+candy_1 = "Nerds Gummy Clusters"
+candy_2 = "Haribo Peach Gummies"
+
+print('Do I like Haribo Peach Gummies?')
+print((candy_1 or candy_2) == 'Nerds Gummy Clusters' or 'Haribo Peach Gummies')
+
+if (candy_1 or candy_2).lower() == ('nerds gummy clusters' or 'haribo peach gummies'):
+    print('I like this candy\n\n')
+
+#7#
+
+fav_anime = 'Jujutsu Kaisen'
+relationship_test = ''
+if relationship_test != fav_anime:
+    print("You don't understand me at all; you don't even know what my favorite anime is.\n\n")
+
+#8
+cat_breeds = ['ragdoll', 'siamese', 'abyssinian', 'savannah']
+your_cat = 'Nebelung'
+
+if your_cat not in cat_breeds:
+    print('Your cat is a ' + your_cat) 
+
+#9
+
+mollusk = 'sea'
+print('does my head hurt?')
+print(mollusk != 'frog')
+
+#10
+print(mollusk != 'sea')
+
+alien_color = "blue"
+if alien_color == "green":
+    print('The player has earned 5 points.')
+if alien_color == "blue":
+    print('The player has earned 5 points.')
+
+if alien_color == 'green':
+    print('The player earned 5 points for shooting the alien')
+else:
+    print('The player just earned 10 points.')
+
+
+random = 7928 % 373
+if random < 50:
+    print("I can't do mental math")
+else:
+    print("It doesn't matter that I'm right, they'll still think I'm dumb")
+
+5-4
+if 39**4 > 1_000_000_000:
+    print("I'm going to die alone")
+else:
+    print("The Donnie Darko dvd I have is scratched and there's nothing I can do about it\n\n")
+
+5-5
+alien_color = 'green'
+if alien_color == 'green':
+    print('The player earned 5 points.')
+elif alien_color == 'yellow':
+    print('The player earned 10 points.')
+elif alien_color == 'red':
+    print('The player has earned 15 points')
+    
+alien_color = 'yellow'
+if alien_color == 'green':
+    print('The player earned 5 points.')
+elif alien_color == 'yellow':
+    print('The player earned 10 points.')
+elif alien_color == 'red':
+    print('The player has earned 15 points')
+
+alien_color = 'red'
+if alien_color == 'green':
+    print('The player earned 5 points.')
+elif alien_color == 'yellow':
+    print('The player earned 10 points.')
+elif alien_color == 'red':
+    print('The player has earned 15 points\n\n')
+    
+5-6 
+age = 93
+if age < 2:
+    print('The person is a baby')
+elif 2 <= age < 4:
+    print('The person is a toddler')
+elif 4 <= age < 13:
+    print('The person is a kid')
+elif 13 <= age < 20:
+    print('The person is a teenager')
+elif 20 <= age < 65:
+    print('The person is an adult')
+else:
+    print('The person is an elder\n\n')
+
+favorite_fruits = ['pomegranates', 'raspberries', 'strawberries']
+
+fruit_1 = 'pomegranates'
+if 'pomegranates' in favorite_fruits:
+    print('Wow, you really like ' + fruit_1)
+
+fruit_2 = 'raspberries'
+if fruit_2 in favorite_fruits:
+    print('Wow, you must really like' + fruit_2)
+
+fruit_3 = 'strawberries'
+if fruit_3 in favorite_fruits:
+    print('Wow, you must really love ' + fruit_3)
 
 
 
 
-
-
-
-
-"""
-me = "Me: "
-boy = "Boy: "
-typical_boy_response = ['Only if you want', "Don't leave early, I don't want to interrupt", "I can't call, I'm gaming"]
-recover = "But I can"
-reschedule = ['tomorrow', 'later tonight', 'this weekend']
-his_actual_response = 'Only if you want'
-
-print(me + 'Can we call tonight?')
-print(boy + his_actual_response)
-if his_actual_response in typical_boy_response:
-    print(me + "Let's just not call then")
-"""
-
-
-#if you ask a boy to call and he says 1, 2, 3, and doesn't add a reschedule, then you 
 
 
 
