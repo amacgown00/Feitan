@@ -1,0 +1,1 @@
+media = {'Film': 'Tarkovsky', 'anime': 'Jujutsu Kaisen'}
