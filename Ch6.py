@@ -52,3 +52,16 @@ new_mike_number = 29
 friend_numbers['mike'] = new_mike_number
 
 print(friend_numbers['mike'])
+
+glossary = {'loop': 'code to perform an action on each element of a list',
+            'boolean': 'assigning a true or false value to a variable',
+            'string': 'set of characters',
+            'if-elif-else': 'actions based on true/false arguments',
+            'list': 'collection of elements',            
+            }
+print(glossary['loop'] + '\n'+
+      glossary['boolean'] + '\n' +
+      glossary['if-elif-else'] + '\n' +
+      glossary['list'] + '\n' +
+      glossary['string']
+      )
