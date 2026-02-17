@@ -200,5 +200,97 @@ life_at_age = {
 
 print('This is what my life looked at age ' + life_at_age['age'] + ':')
 print('I lived in ' + life_at_age['home'] + ' and went to ' + life_at_age['school'] + '.\nMy hobbies were:')
+
 for hobby in life_at_age['Hobbies']:
     print('\t' + hobby)
+
+music = {
+    'my bloody valentine': ['sometimes', 'when you sleep'],
+    'sonic youth': ['teenage riot', 'schizophrenia'],
+    'car seat headrest': ['boxing day', 'destroyed by hippie powers'],
+}
+
+for b, s in music.items():
+    print('My favorite songs by ' + b.title() + ' are ')
+    for song in s:
+        print('\t' + song.title())
+
+
+whatever_we_are = {
+    'jasmineplex': {
+        'first': 'andrea',
+        'last': 'macgown',
+        'mood': 'nostalgic'
+        },
+    'sagwafan': {
+        'first': 'keo',
+        'last': 'chan',
+        'mood': 'smug'
+        },
+}
+
+print(whatever_we_are['jasmineplex'])
+      
+for key, value in whatever_we_are.items():
+    print('Username: ' + key)
+    full_name = value['first'].title() + ' ' + value['last'].upper()
+    mood = value['mood']
+
+    print(full_name.title() + "\nMood: " + mood)
+
+#6-7
+
+sahar = {
+    'name': 'Sahar Aftab',
+    'music': 'drake',
+    'industry': 'hospital administration',
+    'location': 'Yonkers'
+}
+
+hannah_tymann = {
+    'name': 'Hannah Tymann',
+    'music': 'japanese breakfast',
+    'industry': 'film festivals',
+    'location': 'Bay Ridge, Brooklyn'
+}
+
+jeny = {
+    'name': 'Jeny Kwon',
+    'music': 'covers',
+    'industry': 'education',
+    'location': 'Park Slope, Brooklyn'
+}
+
+people = [sahar, hannah_tymann, jeny]
+
+for friend in people:
+    for k, v in friend.items():
+        if k == 'name':
+            print('Name: ' + v)
+        else:
+            print(k.title() + ': ' + v)
+    print('\n')
+
+lainey = {
+    'name': 'Lainey',
+    'animal': 'dog',
+    'owner': 'Hannah Tymann',
+}
+
+quig = {
+    'name': 'Quigley',
+    'animal': 'cat',
+    'owner': 'Andrea'
+}
+
+wally = {
+    'name': 'Wally',
+    'animal': 'dog',
+    'owner': 'Elissa',
+}
+
+pets = [lainey, quig, wally]
+
+for pet in pets:
+    for k, v in pet.items():
+        print()
