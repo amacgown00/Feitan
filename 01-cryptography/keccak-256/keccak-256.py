@@ -8,7 +8,7 @@ print("Keccak-256:", digest.hex())
 
 print('\n')
 
-signal = b'my bloody valentine' 
+signal = b'Joe rotates favorite colors' 
 print('Input: ', signal)
 print('Keccak-256 encryption: ' + digest.hex())
 
