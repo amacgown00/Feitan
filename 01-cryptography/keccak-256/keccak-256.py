@@ -2,10 +2,17 @@ from eth_hash.auto import keccak
 message = b"hello ethereum"
 digest = keccak(message)
 
+print('\n')
 print("Input:", message)
 print("Keccak-256:", digest.hex())
 
+print('\n')
 
+signal = b'my bloody valentine' 
+print('Input: ', signal)
+print('Keccak-256 encryption: ' + digest.hex())
+
+print('\n')
 """
 This shows how to implement the Keccak-256 algorithm from 
 the eth_hash library so you don't have to download an Ethereum client.
