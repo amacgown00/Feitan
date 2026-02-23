@@ -60,107 +60,6 @@ while message != 'none':
         print(message)
 
 electric = 'Maria (210)-485-2325 eversource'
-'''
-'''
-prompt = 'What pizza topppings would you like?      '
-keep_asking = True
-answer = ''
-while answer != 'quit':
-    answer = input(prompt)
-    if answer == 'quit':
-        print('Your pizza will be out shortly.')
-        keep_asking = False
-    else:
-        print(answer)
-'''
-'''active = True
-answer = '' 
-different_answer = ''
-list = []
-question = 'What movies do you like?    '
-second_q = 'Anything else?  '
-
-while active:
-    answer = input(question)
-    if answer not in list:
-        list.append(answer)
-    for response in list:
-        if list[0] != '' and list[1] == '':
-            print('My favborite movie is ' + response)
-        elif list[1] != '':
-            print('My favorite movies are ' + list[0] + ' and ' + list[1] + '.')
-        else:
-            set_3 = list[0] + ', ' + list[1] + ', and '
-
-            print('My favorite movie are ' )
-    if list[1] == '':
-        print('My favorite movie is ' + answer + list[-1:])
-    
-        
-
-
-answer = 'test'
-while active:
-    if 
-different_answer 
-
-
-active = True
-question = 'What would you like?    '
-answer = ''
-
-while active:
-    answer = input(question)
-
-    if answer == ('nothing' or 'done').lower():
-        print('Finished')
-    else:
-        print(answer)
-
-first_answer = ''
-second_answer = ''
-question = 'Are your favorite fruits?   '
-keep_asking = True
-
-while keep_asking:
-    first_answer = input(question)
-    
-    if first_answer != 'done' or 'stop' or '''
-
-'''
-active = True
-movies = []
-question = 'What are your favorite movies?  '
-
-while active:
-    answer = input(question)
-    if answer not in movies and answer != ("that's all" or 'no more'):
-        movies.append(answer.title())
-    one_movie = str(movies[-1:])
-    if len(movies) == 1:
-        mov_1 = str(movies[0])
-        print('My favorite movie is ' + mov_1)
-        continue
-    if len(movies) == 2:
-        mov_1 = str(movies[0])
-        mov_2 = str(movies[1])
-        print('My favorite movies are ' + mov_1 + ' and ' + mov_2)
-        continue
-    if len(movies) >= 3:
-        mov_1 = str(movies[0])
-        mov_2 = str(movies[1])
-        for movie in movies:
-            incorporate = str(movies[-1:])
-            three_or_more = 'My favorite movies are ' + mov_1 + ', ' + mov_2
-            last = ', and ' + incorporate
-            movie_list = three_or_more + last
-            print(movie_list)
-            three_or_more = 'My favorite movies are ' + mov_1 + ', ' + mov_2 + ', ' + incorporate
-            continue
-    if answer == 'no more' or "that's all":
-        active = False 
-        '''
-
 
 active = True
 movies = []
@@ -180,11 +79,83 @@ while True:
         print(f'My favorite movies are {movies[0]} and {movies[1]}')
     else:
         print(f'My favorite movies are {', '.join(movies[:-1])}, and {movies[-1]}')
+'''
 
+#7-4
+'''
+toppings = 'What toppings would you like on your pizza? '
+active = True
+while active:
+    answer = input(toppings)
+    if answer == ('no more' or "that's all"):
+        print('Your pizza will be our shortly.')
+        active = False
+    else:
+        print('Adding ' + answer + ' to your pizza.')
 
-question = input('What toppings would you like?    ')
+#7-5
+age = 'How old are you? '
+ticket_price = ''
+while ticket_price == '':
+    ticket_price = input(age)
+    ticket_price = int(ticket_price)
+    if ticket_price < 3:
+        print('The ticket is free.')
+    elif ticket_price < 12:
+        print('Your ticket is $10.')
+    else:
+        print('Your ticket is $15.')
+
+print('\n')
+
+#7-6 Three Exits
+ticket = 'Do you have a ticket?     '
+based_test = 'Who are you here to see?  '
+artists = ['Francois X', 'Kilopatrah Jones', 'cotton']
+second_question = ''
 answer = ''
-while answer != 'no more':
-    answer= input(question)
-    if message != 'no more':
-        print('Your pizza has ' + answer)
+while answer == '':
+    answer = input(ticket)
+    if answer.lower() == 'yes':
+        second_question = input(based_test)
+        if second_question == "I don't know":
+            print('Step to the left please')
+            break
+        if second_question in artists:
+            print('You can head in')
+        else:
+            break
+    else:
+        second_question = input(based_test)
+        if second_question in artists:
+            print('You can head in, tickets are on the left.')
+        else:
+            break
+
+ticket = 'Do you have a ticket?     '
+based_test = 'Who are you here to see?  '
+artists = ['Francois X', 'Kilopatrah Jones', 'cotton']
+second_question = ''
+answer = ''
+
+active = True
+while active:
+    answer = input(ticket)
+    if answer == 'yes':
+        second_question = input(based_test)
+        if based_test == "I don't know":
+            print('Please step to the left')
+            active = False
+        if based_test in artists:
+            print('Go ahead and head in')
+            active = False
+    if answer == 'no':
+        second_question = input(based_test)
+        if second_question in artists:
+            print('Alright, head on in')
+            active = False
+        else:
+            print('Step to the left')
+            active = False
+'''
+
