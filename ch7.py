@@ -159,3 +159,33 @@ while active:
             active = False
 '''
 
+#While loops with dictionaries and lists 
+#7-8 and 7-9 Deli
+sandwich_orders = ['tuna melt', 'banh mi', 'blt', 'pastrami', 'pastrami', 'pastrami']
+finished_sandwiches = []
+
+print('The deli has run out of pastrami.')
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+while sandwich_orders:
+    moving = sandwich_orders.pop()
+    finished_sandwiches.append(moving)
+    print('I made your ' + moving + '.')
+
+print('\nFinished sandwiches:')
+for sandwich in finished_sandwiches:
+    print('\t' + sandwich)
+
+#7-10 Dream vacation
+
+active = True
+dream_vacations = {}
+while active:
+    name = input('What is your name?    ')
+    destination = input('If you could visit one place in the world, where would you go? ')
+    dream_vacations[name] = destination
+    again = input('Is there someone behind you in line who wants to take the poll? (y/n)  ')
+    if again == 'n':
+        active = False
+for name, destination in dream_vacations.items():
+    print(name + ' would like to go to ' + destination)
