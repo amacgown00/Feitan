@@ -54,3 +54,12 @@ def make_shirt(size = 'L', text = 'I love Python'):
 make_shirt()
 make_shirt(size = 'M')
 make_shirt(size = '24', text = 'The Row')
+
+#8-5 Cities 
+def describe_city(city, country = 'the United States of America'):
+    '''Function that accepts the name of a city and its country and prints a sentence. Parameter is the default value'''
+    print(city + ' is in ' + country)
+space()
+describe_city('Paris')
+describe_city('Los Angeles')
+describe_city('Buenos Aires', 'Argentina')
