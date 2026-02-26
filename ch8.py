@@ -58,8 +58,25 @@ make_shirt(size = '24', text = 'The Row')
 #8-5 Cities 
 def describe_city(city, country = 'the United States of America'):
     '''Function that accepts the name of a city and its country and prints a sentence. Parameter is the default value'''
-    print(city + ' is in ' + country)
+    final_destination = (city + ' is in ' + country)
+    return final_destination
+
 space()
 describe_city('Paris')
 describe_city('Los Angeles')
 describe_city('Buenos Aires', 'Argentina')
+
+active = True
+
+def new_job(role, company):
+    '''Return the job role and company you want to work at'''
+    role_in_company = role + ' at ' + company
+    return role_in_company.title()
+
+while active:
+    print('Tell me about your ideal role')
+    n_role = input('Role title: ')
+    n_company = input('Company: ')
+
+    formatted_role = new_job(n_role, n_company)
+    print('You would like to be a ' + formatted_role)
