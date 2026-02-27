@@ -65,11 +65,11 @@ space()
 describe_city('Paris')
 describe_city('Los Angeles')
 describe_city('Buenos Aires', 'Argentina')
-
+'''
 active = True
 
 def new_job(role, company):
-    '''Return the job role and company you want to work at'''
+    #Return the job role and company you want to work at
     role_in_company = role + ' at ' + company
     return role_in_company.title()
 
@@ -80,3 +80,24 @@ while active:
 
     formatted_role = new_job(n_role, n_company)
     print('You would like to be a ' + formatted_role)
+    
+    if n_role or n_company == 'stop':
+        active = False
+    '''
+#8-7 Album:
+
+def make_album(artist, album_title):
+    album_dictionary = {'Artist': artist, 'Album Title': album_title}
+    return album_dictionary
+
+active = True
+while active:
+    print('What is your favorite album? \nType STOP at any time to exit')
+    album_name = input('Album:  ').title()
+    artist_name = input('Artist:    ').title()
+
+    final_album_dictionary = make_album(artist_name, album_name)
+    if (artist_name.lower()) or (album_name.lower()) == 'stop':
+        active = False
+    else:
+        print(final_album_dictionary)
