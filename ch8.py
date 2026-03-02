@@ -1,6 +1,17 @@
+#8-15
+from printing_functions import*
+
+eames = ['DCW', 'LCW', 'Lounge', 'shell']
+new_eames = []
+
+
+print_models(eames, new_eames)
+show_completed_models(new_eames)
+
 def space():
     #Adding an empty line
     print('\n')
+
 
 # 8-1 Message 
 
@@ -126,17 +137,13 @@ while music_test:
         print(al_bum)
 '''
 
-#8-9
-
+print('NEXT')
+#8-10
 list_magicians = ['Jeny', 'Sahar', 'Hannah T', 'Abby', 'Hannah']
-
 def show_magicians(example_list):
     print('Magician Names:')
     for token in example_list:
         print('\t' + token)
-
-print('NEXT')
-#8-10
 
 def make_great(example_list):
     new_list = []
@@ -154,7 +161,6 @@ show_magicians(list_magicians)
 space()
 
 #8-12
-
 def sandwich(bread, *toppings):
     print('This sandwich is on ' + bread + ' with the following toppings:')
     for topping in toppings:
@@ -164,10 +170,7 @@ sandwich('foccacia', 'fresh mozzerella', 'pesto', 'tomato', 'basil')
 sandwich('banh mi', 'barbeque pork', 'paté', 'picked daikon and carrots', 'cilantro','jalapeno')
 sandwich('a roll', 'bacon', 'egg', 'cheese')
 
-
-
-
-
+space()
 
 
 '''
