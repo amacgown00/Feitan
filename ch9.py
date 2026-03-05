@@ -14,4 +14,4 @@ class Cat():
 
     def jump(self):
         '''Simulate a cat jumping.'''
-        print(self.name.title() + ' jumped.')
+        print(self.name.title() + ' jumped.') 
