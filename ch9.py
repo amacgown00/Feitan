@@ -1,4 +1,6 @@
 # Chapter 8 - Classes 
+def space():
+    print('\n')
 
 class Cat():
     '''Modeling a cat.'''
@@ -14,4 +16,4 @@ class Cat():
 
     def jump(self):
         '''Simulate a cat jumping.'''
-        print(self.name.title() + ' jumped.') 
+        print(self.name.title() + ' jumped.')
