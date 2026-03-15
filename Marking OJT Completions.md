@@ -1,41 +1,63 @@
-# Marking OJT Completions 
+# SFLMS - Marking OJT Completions
 
 <ul>
-    <li>Marking OJTs as complete in SFLMS and attaching a file to the Learning History.</li>
-    <li>Uploading attachments to the Learning History (i.e. signed OJT forms).</li>
+    <li>Mark user OJTs as complete in SFLMS.</li>
+    <li>Upload attachments to Learning History (i.e. signed OJT forms).</li>
 </ul>
 
 ## Marking User OJT Completions
 
 <ol>
-    <li>Select Learning [?].</li>
-    <li>Select [Change Learning History for Multiple Courses]. </li>
-    <li>Enter User ID.</li>
-
-Enter Learning Item ID. 
-
-Select Add. 
-
-Select OJT Complete from the dropdown. 
-
-Click Apply Changes. 
-
-Click Save. 
+    <li>
+        Select <b>Learning</b>.
+    </li>
+    <li>
+        Select <b>[Change Learning History for Multiple Courses]</b>.
+    </li>
+    <li>
+        Enter User ID.
+    </li>
+    <li>
+        Enter Learning Item ID.
+    </li>
+    <li>
+        Select <b>Add</b>.
+    </li>
+    <li>
+        Select the <b>Completion Status </b> dropdown and select <b>OJT Complete</b>.
+    </li>
+    <li>
+        Select <b>Apply Changes</b>.
+    </li>
+    <li>
+        Select <b>Save</b>.
+    </li>
 </ol>
 
 
 ## Uploading Attachments to User History 
+**File format must be .JPG, .JPEG, or .IMG**
 
-**Must be .JPG, .JPEG, or .IMG**
-
-Select Change User Learning History. 
-
-Enter User ID. 
-
-Find the completed Learning Item entered in the last step. 
-
-Select Edit.
-
-Select [paper clip icon] to add attachments. 
-
-Select Browse Files. 
+<ol>
+    <li>    
+        Select Change User Learning History.
+    </li>
+    <li>
+        Enter User ID.
+    </li>
+    <li>
+        Find the completed Learning Item entered in the last step. 
+    </li>
+    <li>
+        Select <b>Edit</b>.
+    </li>
+    <li>
+        Select [paper clip icon] to add attachments.
+    </li>
+    <li>
+        Select <b>Browse Files</b>.
+    </li>
+    <li>
+        Select <b>Apply Changes</b>.
+    </li>
+</ol>

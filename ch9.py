@@ -48,6 +48,10 @@ class Restaurant():
     def set_number_served(self, customer_number):
         '''Set the number of customers to the given value.'''
         self.number_served = customer_number
+        
+    def increment_number_served(self, add_customers):
+        '''Add the given number to the customer numbers.'''
+        
 
 teado = Restaurant('TeaDo', 'boba')
 print('TeaDo has served ' + str(teado.number_served) + ' people.')
