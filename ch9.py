@@ -44,6 +44,9 @@ class Restaurant():
     
     def open_restaurant(self):
         print(self.restaurant_name + ' is open.')
+        
+    def read_customers(self):
+        print(self.restaurant_name + ' has served ' + str(self.number_served) + ' customers.')
     
     def set_number_served(self, customer_number):
         '''Set the number of customers to the given value.'''
@@ -51,6 +54,7 @@ class Restaurant():
         
     def increment_number_served(self, add_customers):
         '''Add the given number to the customer numbers.'''
+        self.number_served += add_customers
         
 
 teado = Restaurant('TeaDo', 'boba')
@@ -58,8 +62,10 @@ print('TeaDo has served ' + str(teado.number_served) + ' people.')
 teado.number_served = 100
 print('TeaDo has served ' + str(teado.number_served) + ' people.')
 teado.set_number_served(500)
-print('TeaDo has served ' + teado.number_served + ' people.')
+print('TeaDo has served ' + str(teado.number_served) + ' people.')
 
+teado.increment_number_served(30)
+teado.read_customers()
 
 space()
 
@@ -83,39 +89,8 @@ byblos = Restaurant('Byblos', 'Lebanese')
 sarma.describe_restaurant()
 prairie_fire.describe_restaurant()
 byblos.describe_restaurant()
-
-
-'''
-9-3. Users: Make a class called User. Create two attributes called first_name and last_name, and then create several other attributes that are typically stored in a user profile. Make a method called describe_user() that prints a summary of the user’s information. Make another method called greet_user() that prints a personalized greeting to the user.
-Create several instances representing different users, and call both methods for each user.'''
-
-class User:
-    '''Capturing user profile information.'''
-    
-    def __init__(self, first_name, last_name, username):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.username = username
-    
-    def describe_user(self):
-        print(self.first_name.title() + ' ' + self.last_name.title() + "'s username is " + self.username)
-    
-    def greet_user(self):
-        print('Hi ' + self.first_name.title())
-
-sahar = User('sahar', 'aftab', 'sahar_ken')
-sophie = User('sophie', 'cox', 'swxpt')
-jeny = User('jeny', 'kwon', 'jkwon')
-
-sahar.describe_user()
-sahar.greet_user()
 space()
-sophie.describe_user()
-sophie.greet_user()
-space()
-jeny.describe_user()
-jeny.greet_user()
-space()
+
 class Car():
     '''Attempt to represent a car.'''
     
@@ -162,6 +137,69 @@ space()
 my_new_car.update_odometer(20000)
 my_new_car.increment_odometer(100)
 my_new_car.read_odometer()
+
+'''
+9-3. Users: Make a class called User. Create two attributes called first_name and last_name, and then create several other attributes that are typically stored in a user profile. Make a method called describe_user() that prints a summary of the user’s information. Make another method called greet_user() that prints a personalized greeting to the user.
+Create several instances representing different users, and call both methods for each user.'''
+
+class User:
+    '''Capturing user profile information.'''
+    
+    def __init__(self, first_name, last_name, username, password):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.username = username
+        self.password = password
+        self.login = 0
+    
+    def describe_user(self):
+        print(self.first_name.title() + ' ' + self.last_name.title() + "'s username is " + self.username)
+    
+    def greet_user(self):
+        print('Hi ' + self.first_name.title())
+        
+    def increment_login_attempts(self):
+        '''Increments login value by 1.'''
+        login_attempt = ''
+        print('Hi ' + self.first_name.title())
+        space()
+        while login_attempt != self.password:
+            login_attempt = str(input('Enter password:  '))
+            
+            if login_attempt != self.password:
+                self.login += 1
+                print('Login unsuccessful attempts:  ' + str(self.login))
+            else:
+                print('\nLogin successful.')
+    def reset_login_attempt(self):
+        '''Resets the login value to 0'''
+        reset_password = input('Would you like to reset your password? (Y/N)    ')
+        if reset_password.lower() == 'y':
+            self.login = 0
+            new_password = str(input('Enter new password:   '))
+            print('Password reset successful.\nNew password:    ' + new_password)
+            print('Login attempts:  '  + str(self.login))
+
+        else:
+            print('Login attempts:  ' + str(self.login))
+            space()           
+
+sahar = User('sahar', 'aftab', 'sahar_ken', 'smith2018')
+sophie = User('sophie', 'cox', 'swxpt', 'oldp')
+jeny = User('jeny', 'kwon', 'jkwon', 'smith2020')
+
+sahar.describe_user()
+sahar.greet_user()
+space()
+sophie.describe_user()
+sophie.greet_user()
+space()
+jeny.describe_user()
+jeny.greet_user()
+space()
+sahar.increment_login_attempts()
+space()
+sahar.reset_login_attempt()
 
 
 
