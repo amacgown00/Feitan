@@ -143,7 +143,7 @@ my_new_car.read_odometer()
 Create several instances representing different users, and call both methods for each user.'''
 
 class User:
-    '''Capturing user profile information.'''
+    #Capturing user profile information.
     
     def __init__(self, first_name, last_name, username, password):
         self.first_name = first_name
@@ -159,7 +159,7 @@ class User:
         print('Hi ' + self.first_name.title())
         
     def increment_login_attempts(self):
-        '''Increments login value by 1.'''
+        #Increments login value by 1.
         login_attempt = ''
         print('Hi ' + self.first_name.title())
         space()
@@ -172,7 +172,7 @@ class User:
             else:
                 print('\nLogin successful.')
     def reset_login_attempt(self):
-        '''Resets the login value to 0'''
+        #Resets the login value to 0
         reset_password = input('Would you like to reset your password? (Y/N)    ')
         if reset_password.lower() == 'y':
             self.login = 0
@@ -183,7 +183,7 @@ class User:
         else:
             print('Login attempts:  ' + str(self.login))
             space()           
-
+'''
 sahar = User('sahar', 'aftab', 'sahar_ken', 'smith2018')
 sophie = User('sophie', 'cox', 'swxpt', 'oldp')
 jeny = User('jeny', 'kwon', 'jkwon', 'smith2020')
@@ -200,10 +200,10 @@ space()
 sahar.increment_login_attempts()
 space()
 sahar.reset_login_attempt()
+'''
 
-
-
-'''9-5. Login Attempts: Add an attribute called login_attempts to your User
+'''
+9-5. Login Attempts: Add an attribute called login_attempts to your User
 class from Exercise 9-3 (page 166). Write a method called increment_
 login_attempts() that increments the value of login_attempts by 1. Write
 another method called reset_login_attempts() that resets the value of login_
@@ -212,3 +212,54 @@ Make an instance of the User class and call increment_login_attempts()
 several times. Print the value of login_attempts to make sure it was incremented
 properly, and then call reset_login_attempts(). Print login_attempts again to
 make sure it was reset to 0.'''
+
+'''
+9-6. Ice Cream Stand: An ice cream stand is a specific kind of restaurant. Write
+a class called IceCreamStand that inherits from the Restaurant class you wrote
+in Exercise 9-1 (page 166) or Exercise 9-4 (page 171). Either version of the class will work; just pick the one you like better. Add an attribute called
+flavors that stores a list of ice cream flavors. Write a method that displays these flavors. Create an instance of IceCreamStand, and call this method.'''
+
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type='ice cream'):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = []
+
+    def list_flavors(self):
+        '''Display the flavors available'''
+        print('\nHere are the available flavors:')
+        for flavor in self.flavors:
+            print(f'- {flavor.title()}')
+
+ube_freeze = IceCreamStand('Ube Freeze')
+ube_freeze.flavors = ['ube', 'matcha','black sesame']
+ube_freeze.describe_restaurant()
+ube_freeze.list_flavors()
+
+space()
+
+
+class Admin(User):
+    '''Creating the Admin child class from the User class.'''
+    
+    def __init__(self, first_name, last_name, username, password):
+        super().__init__(first_name, last_name, username, password)
+        self.privileges = Privileges()
+        
+class Privileges():
+    '''Creating a Privileges class from the User class'''
+    
+    def __init__(self, privileges=[]):
+        self.privileges = privileges
+        
+    def show_privileges(self):
+        '''Method that shows Admin privileges'''
+        print('Administrator privileges:')
+        for privilege in self.privileges:
+            print('\t- ' + privilege)
+
+salome = Admin('Salome', 'Ha', 'the_plum', 'susan')
+salome.describe_user()
+salome.privileges.show_privileges()
+
+
+        
